@@ -14,6 +14,10 @@ fibonacci:
 binary_search:
 	${CC} binary_search.cpp ./sorts/quick_sort.cpp -o binary_search.exe
 
+.PHONY: binary
+binary:
+	${CC} binary.cpp sorts/quick_sort.cpp -o binary.exe
+
 .PHONY: clean
 clean:
 	rm *.exe
